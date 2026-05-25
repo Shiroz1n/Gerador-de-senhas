@@ -20,7 +20,7 @@ const PasswordGenerator = () => {
             <div className='slider'>
                 <label htmlFor="digits-lenght">Digitos</label>
 
-                <input type="text" id='digits-lenght' type='range' min={4} max={64} value={digitsLenght}
+                <input type="text" id='digits-lenght' type='range' min={0} max={10} value={digitsLenght}
                     onChange={({target}) => setDigitsLenght(parseInt(target.value))}/>
                 <span>{digitsLenght}</span>
             </div>
@@ -28,7 +28,7 @@ const PasswordGenerator = () => {
             <div className='slider'>
                 <label htmlFor="symbols-lenght">Simbolos</label>
 
-                <input type="text" id='symbols-lenght' type='range' min={4} max={64} value={symbolsLenght}
+                <input type="text" id='symbols-lenght' type='range' min={0} max={10} value={symbolsLenght}
                     onChange={({target}) => setSymbolsLenght(parseInt(target.value))}/>
                 <span>{symbolsLenght}</span>
             </div>
