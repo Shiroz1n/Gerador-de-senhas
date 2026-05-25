@@ -1,6 +1,7 @@
 import './style.css';
 import { useState, useEffect } from 'react';
 import PasswordBox from '../PasswordBox';
+import CopyPasswordButton from '../CopyPassword';
 
 const PasswordGenerator = () => {
     const [password, setPassword] = useState('');
@@ -72,6 +73,7 @@ const PasswordGenerator = () => {
             
 
             <PasswordBox password={password}></PasswordBox>
+            <CopyPasswordButton password={password}></CopyPasswordButton>
         </>
     );
 };
